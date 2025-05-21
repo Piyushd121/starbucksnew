@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu | Starbucks</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    .menu-header {
+      background: url('./Images/AdobeStock_571834995_Preview_Editorial_Use_Only.jpeg') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 100px 40px;
+      text-align: center;
+      color: white;
+      height: 500px;
+    }
+
+    .menu-header h1 {
+      font-size: 64px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .menu-section {
+      padding: 60px 100px;
+      background-color: #fff;
+    }
+
+    .menu-section h2 {
+      font-size: 36px;
+      border-bottom: 4px solid #00704A;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .menu-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1 1 calc(25% - 30px);
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .menu-card img {
+      width: 90%;
+      height: 400px;
+      /* object-fit: cover; */
+    }
+
+    .menu-card h3 {
+      font-size: 20px;
+      margin: 15px 0 5px;
+    }
+
+    .menu-card p {
+      font-size: 14px;
+      padding: 0 15px 20px;
+      color: #555;
+    }
+
+    .footer {
+      margin-top: 60px;
+    }
+
+    .add-to-cart {
+  background-color: #00704A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #005f3c;
+}
+
+.price {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00704A;
+  margin-bottom: 10px;
+}
+
+
+    @media screen and (max-width: 768px) {
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="./Images/7b85f31517bf6b7b0b7490c86fa4dd25.png" alt="Starbucks Logo" class="logo">
+    <div class="nav-right">
+      <input type="text" placeholder="Search">
+      <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+      <div class="menu-icon">&#9776;</div>
+      <div class="offcanvas-menu" id="offcanvas">
+      <div class="offcanvas-content">
+     <span class="close-btn" id="close-btn">&times;</span>
+  <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="./Menu.html"><i class="fas fa-mug-hot"></i> Menu</a>
+  <a href="#"><i class="fas fa-clock"></i> Happy Hour</a>
+  <a href="#"><i class="fas fa-glass-martini-alt"></i> Drinks</a>
+  <a href="./Contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  </div>
+</div>
+
+    </div>
+  </header>
+
+  <div class="menu-header">
+    <h1>Our Menu</h1>
+    <p>Deliciously crafted drinks and treats</p>
+  </div>
+
+  <!-- Featured Section -->
+  <section class="menu-section">
+    <h2>Featured</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="./Images/ultra-caramel.webp" alt="Ultra Caramel Frappuccino" />
+        <h3>Ultra Caramel Frappuccino</h3>
+        <p>Layers of caramel and whipped cream make this a bold indulgence.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <img src="./Images/vecteezy_a-green-tea-latte-with-whipped-cream-and-cherries_47136818-removebg-preview.png" alt="Matcha Lemonade" />
+        <h3>Matcha Lemonade</h3>
+        <p>Earthy matcha meets citrusy lemonade for a refreshing fusion.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hot Drinks -->
+  <section class="menu-section">
+    <h2>Hot Drinks</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="./Images/108052-removebg-preview.png" alt="Caffe Latte" />
+        <h3>Caffè Latte</h3>
+        <p>Rich espresso with steamed milk and a light layer of foam.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <img src="./Images/112539-removebg-preview.png" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>Bold espresso with a thick layer of foam – a classic.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cold Drinks -->
+  <section class="menu-section">
+    <h2>Cold Brews & Refreshers</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="./Images/105000-removebg-preview.png" alt="Vanilla Sweet Cream Cold Brew" />
+        <h3>Vanilla Sweet Cream Cold Brew</h3>
+        <p>Slow-steeped cold brew topped with vanilla sweet cream.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <img src="./Images/100501-removebg-preview.png" alt="Pink Drink" />
+        <h3>Americano</h3>
+        <p>Refreshing coconut milk, strawberries, and acai base.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bakery -->
+  <section class="menu-section">
+    <h2>Bakery</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="./Images/109270-removebg-preview.png" alt="Butter Croissant" />
+        <h3>Butter Croissant</h3>
+        <p>Flaky and buttery – the perfect pastry for any coffee.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <img src="./Images/Best-Blueberry-Muffins-Recipe-1-of-1-removebg-preview.png" alt="Blueberry Muffin" />
+        <h3>Blueberry Muffin</h3>
+        <p>Moist muffin with juicy blueberries and a crunchy top.</p>
+        <span class="price">$4.95</span>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="./Images/7b85f31517bf6b7b0b7490c86fa4dd25.png" alt="Starbucks Logo" class="footer-logo" />
+      <div class="footer-links">
+        <a href="#">Menu</a>
+        <a href="#">Rewards</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Careers</a>
+        <a href="./Contact.html">Contact Us</a>
+      </div>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p class="footer-note">&copy; 2025 Starbucks Coffee Company. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+      const menuIcon = document.querySelector(".menu-icon");
+      menuIcon.addEventListener("click", () => {
+        document.querySelector(".nav-right input").classList.toggle("show");
+      });
+    });
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const offcanvas = document.getElementById("offcanvas");
+    const closeBtn = document.getElementById("close-btn");
+
+    menuIcon.addEventListener("click", () => {
+      offcanvas.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      offcanvas.classList.remove("show");
+    });
+
+    window.addEventListener("click", function (e) {
+      if (e.target === offcanvas) {
+        offcanvas.classList.remove("show");
+      }
+    });
+  });
+  </script>
+</body>
+</html>
